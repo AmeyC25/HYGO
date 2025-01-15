@@ -8,8 +8,8 @@ from langchain_huggingface import HuggingFaceEndpoint
 from datetime import datetime
 
 # Uncomment if not using pipenv
-from dotenv import load_dotenv, find_dotenv
-load_dotenv(find_dotenv())
+#from dotenv import load_dotenv, find_dotenv
+#load_dotenv(find_dotenv())
 
 # Configuration and Settings
 DB_FAISS_PATH = "vectorstore/db_faiss"
@@ -249,7 +249,8 @@ def main():
             """
 
         HUGGINGFACE_REPO_ID = "mistralai/Mistral-7B-Instruct-v0.3"
-        HF_TOKEN = os.environ.get("HF_TOKEN")
+        #HF_TOKEN = os.environ.get("HF_TOKEN")
+        HF_TOKEN = st.secrets["hf_token"]
 
         try:
             with st.spinner("Analyzing medical information..."):
