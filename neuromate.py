@@ -121,7 +121,6 @@ def init_patient_info():
 
 def main():
     # Initialize patient info
-    st.write("Token exists:", "hf_token" in st.secrets)  # Don't print the actual token!
     init_patient_info()
 
     # Sidebar
