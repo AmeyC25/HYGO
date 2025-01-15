@@ -248,7 +248,7 @@ def main():
             Provide a clear, professional response with relevant medical considerations.
             """
 
-        HUGGINGFACE_REPO_ID = "mistralai/Mistral-7B-Instruct-v0.3"
+        HUGGINGFACE_REPO_ID = "google/flan-t5-small"
         #HF_TOKEN = os.environ.get("HF_TOKEN")
         HF_TOKEN = st.secrets["hf_token"]
 
